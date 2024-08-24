@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Personal Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="https://kit.fontawesome.com/e8b048a3c7.js" crossorigin="anonymous"></script>
+    <script src='script.js'></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                
+                <h1>Hi, I am <span>Vikram Rana</span></h1>
+                <p><span id="element"></span</p>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image1.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hello! My name is Vikram.I am a Computer Science Engineering student with a passion for
+                        technology and problem-solving. Proficient in Python, JavaScript, and C++, I have developed
+                        projects in web development,C++,Python,Cyber Security and machine learning. I thrive on
+                        turning complex challenges
+                        into innovative solutions. My academic journey includes coursework in algorithms, data
+                        structures, Computer Networks, Database Management System and operating systems. Aspiring to
+                        a career in software engineering, I am eager
+                        to contribute to dynamic projects and cutting-edge technologies.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Database</span><br>MYSql, MongoDB</li>
+                            <li><span>Languages</span><br>Html Css JavaScript C++ Python PHP</li>
+                            <li><span>Interests</span><br>Machine Learning, Web development, Cyber Security, UI/UX
+                                Web Designing, Software Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>10th - 82.2%</span><br>Comet Mensa Sr. Sec. School</li>
+                            <li><span>12th - 79.6%</span><br>Comet Mensa Sr. Sec. School</li>
+                            <li><span>B.TECH CSE - 80.2%</span><br>CGC CEC LANDRAN</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Have good knowledge and experience of developing responsive websites. Made various clones
+                        such as Youtube, Netflix, Amazon etc. Offering custom web development services, I create
+                        responsive, high-performance websites tailored to your needs.Let's turn your vision into
+                        digital presence. </p>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop"></i>
+                    <h2>Programming</h2>
+                    <p>I hold good knowledge of C++ and have made various basic projects such as bill generators,
+                        Management systems. I also know Python and JavaScript and can offer you help in these
+                        languages regarding projects or any other query.</p>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <h2>Other Services</h2>
+                    <p>I know various concepts of Machine learning and have prepared projects like temperature
+                        prediction, weather prediction and I also hold knowledge of UI/UX Designing, Software
+                        Development and Cyber Security.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PROJECTS -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <h4>Try clicking on image</h4>
+                <div class="work">
+                    <img src="tourntravel.jpeg" alt="tourntravelproject1">
+                    <div class="layer">
+                        <h3>Web Projects</h3>
+                        <p>In the field of web development I have made various <br>projects including tour n travel
+                            website which helps<br> you to book hotels, tickets, etc and gives you a guide plan
+                            according to your budget. I also made gaming website which included games like Mario,
+                            car racing, typing speed, flip the card etc. I also made clones of websites like Amazon,
+                            Netflix etc.
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="cppproject.jpeg" alt="cppproject1">
+                    <div class="layer">
+                        <h3>Cpp Projects</h3>
+                        <p>I made various cpp projects such as management systems, billing systems,<br> tic-tac-toe
+                            game etc.
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="weather1.jpeg" alt="MYSql">
+                    <div class="layer">
+                        <h3>ML projects</h3>
+                        <p>I made various ML projects such as weather predictor, house price predictor, rainfall
+                            predictor etc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <section class="secondsection">
+        <span class="text-gray">What I have done so far</span>
+        <h1> Learning Timeline </h1>
+        <div class="box">
+            <div class="vertical">
+                <img class="image-top" src="1stsem.png" alt="">
+                <div class="vertical-title">C in 1st sem
+
+                </div>
+                <div class="vertical-desc">
+                    I satrted learning C language in first sem and made simple programs to learn.
+                </div>
+            </div>
+
+            <div class="vertical">
+                <img class="image-top" src="2ndsem.png" alt="">
+                <div class="vertical-title">C++ in 2nd sem
+
+                </div>
+                <div class="vertical-desc">
+                    In 2nd sem I jumped to C++ and tried to learn OOP concept in C++.
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="3rdsem.png" alt="">
+                <div class="vertical-title">Web Dev in 3rd sem
+
+                </div>
+                <div class="vertical-desc">
+                    I started learning web designing as my interest grew in it. I learnt UI/UX designing and HTML
+                    CSS and JavaScript and started making various projects.
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="4thsem.png" alt="">
+                <div class="vertical-title">DSA in 4th sem
+
+                </div>
+                <div class="vertical-desc">
+                    In 4th sem i started to focus on DSA to build problem solving skills in me.
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="5thsem.png" alt="">
+                <div class="vertical-title">DBMS in 5th sem
+
+                </div>
+                <div class="vertical-desc">
+                    In 5th sem i came across Database management system and started learning it. I learnt MySQL and
+                    MONGODB.
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="6thsem.png" alt="">
+                <div class="vertical-title">ML in 6th sem
+
+                </div>
+                <div class="vertical-desc">
+                    In 6th sem i came across Machine Learning and my interest in ML grew and i focused on learning
+                    Python for ML and made simple projects.
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="7thsem.png" alt="">
+                <div class="vertical-title">7th sem
+
+                </div>
+                <div class="vertical-desc">
+                    Now in my 7th sem i am focusing on practising and mastering the skills i learnt. I am making
+                    different projects and trying to master these skills.
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--    Contact     -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> vkrana1722@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 6283872350</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100033980982643"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/vxkrm.r?igsh=MXY4dzFldDVkc281ZQ=="><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="VikramRana_2101904_CSE (1).pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Vikram Rana <i class="fa-solid fa-heart"></i> Try viewing in pc or laptop</p>
+        </div>
+    </div>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Programmer', 'Web Developer', 'Software Engineer.'],
+            typeSpeed: 70,
+        });
+    </script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxq2GuPpiWO-4l2zZZ8IacQ4nUrVO9rQ11STnNgZrURP8li1Jw7OOt63VMaXS9wE56f/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+
+</html>
